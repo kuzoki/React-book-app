@@ -1,0 +1,201 @@
+body {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #eef2f7;
+}
+.App {
+  overflow: hidden;
+}
+/* Side Bar */
+.sidebar {
+  background-color: #313a46;
+  height: 100vh;
+  padding: 50px 40px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.sidebar h2 {
+  color: #fff;
+}
+.sidebar .sidebar-widget {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar .sidebar-widget {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .sidebar .widget-library-log {
+    margin-left: 24px;
+  }
+}
+@media only screen and (max-width: 624px) {
+  .sidebar {
+    display: block;
+  }
+  .sidebar .widget-library-log {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    padding: 30px 30px;
+  }
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  padding-left: 15px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  border-radius: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+input:focus {
+  background-color: #f8f8f8;
+}
+
+select {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  padding-left: 10px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  border-radius: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+
+button[type="submit"],
+button[type="button"] {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #03b5e6;
+  transition: 0.3s all;
+}
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #00a3d0;
+  cursor: pointer;
+}
+
+.sec-title {
+  font-size: 26px;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.library-log {
+  background-color: #404853;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  color: #fff;
+}
+.library-log .library-log--single {
+  display: flex;
+  align-items: center;
+}
+.library-log .library-log--single img {
+  width: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.library-log .library-log--single h4 {
+  font-weight: 500;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.library-log .library-log--single span {
+  font-weight: 400;
+  color: #03b5e6;
+}
+/* Main */
+
+.main-content {
+  padding: 50px 40px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.main-content .book-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px 1px rgba(154, 161, 171, 0.15);
+  margin-bottom: 24px;
+}
+.main-content .book-card .title {
+  color: #6c757d;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+.main-content .book-card .author,
+.main-content .book-card .pages,
+.main-content .book-card .status {
+  color: #98a6ad;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.main-content .book-card .status.status--read {
+  color: #03b5e6;
+}
+.main-content .book-card .btn {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  color: #6c757d;
+}
+.main-content .book-card .btn.btn-delete {
+  color: #fa5c7c;
+  margin-left: 10px;
+
+  padding: 0 0 0 24px;
+}
+.main-content .book-card .btn.btn-delete:hover {
+  color: #f72e56;
+  opacity: 0.9;
+}
+.main-content .book-card .btn.btn-edit {
+  padding: 0 0 0 24px;
+}
+.main-content .book-card .btn.btn-edit.btn-edit:hover {
+  color: #000;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 480px) {
+  .main-content {
+    padding: 30px 30px;
+  }
+}
