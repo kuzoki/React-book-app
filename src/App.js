@@ -8,6 +8,7 @@ import StatBooks from './components/StatBooks';
 import { UserGlobal } from './components/useGlobal';
 function App() {
   const [allBooks, setAllBooks] = useState([]);
+  
  
   
   useEffect(() => {
@@ -35,7 +36,7 @@ function App() {
           <div className="col-9">
             <div className="main-content">
               <h1 className="sec-title">My Books</h1>
-               <DisplayBooks />
+               {allBooks && <DisplayBooks />}
             </div>
           </div>
         </div>
