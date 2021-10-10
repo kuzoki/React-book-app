@@ -201,11 +201,15 @@ button[type="button"]:hover {
   opacity: 0.9;
 }
 .main-content .book-card .btn.btn-edit {
-  padding: 0 0 0 24px;
+  padding: 0 0 0 5px;
 }
 .main-content .book-card .btn.btn-edit.btn-edit:hover {
   color: #000;
   opacity: 0.9;
+}
+.img-ed {
+  width: 20px;
+  margin-right: 10px;
 }
 @media only screen and (max-width: 480px) {
   .main-content {

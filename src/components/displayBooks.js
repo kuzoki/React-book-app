@@ -39,12 +39,20 @@ const DisplayBooks = () => {
                 { books.allBooks.map((book)=>(
                     <div className="col-4" key={book.id}>
                       <div className="book-card" >
-                          <h4 className="title" ><span className="first"> Title</span> : {book.title}</h4>
-                          <p className="author"><span className="first">Author</span> : {book.author}</p>
-                          <p className="pages"><span className="first">Pages </span>: {book.pages}</p>
-                          <p className="status"><span className="first">State : </span>{ book.read === 'no' ? <span className="notread">Not Read Yet</span> : <span className="read">All Page Read</span>}</p>
-                          <button className="btn btn-edit" onClick={()=>popUp(book.id)}>Edit</button>
-                          <button className="btn btn-delete" onClick={()=>deleteBook(book.id)}>Delete</button>
+                            <h4 className="title" ><span className="first"> Title</span> : {book.title}</h4>
+                            <p className="author"><span className="first">Author</span> : {book.author}</p>
+                            <p className="pages"><span className="first">Pages </span>: {book.pages}</p>
+                            <p className="status"><span className="first">State : </span>{ book.read === 'no' ? <span className="notread">Not Read Yet</span> : <span className="read">All Page Read</span>}</p>
+                            
+                            <button className="btn btn-edit" onClick={()=>popUp(book.id)}> 
+                             <img src="./img/pen.svg" alt="books icon" className="img-ed" /> 
+                              Edit
+                            </button>
+                            
+                            <button className="btn btn-delete" onClick={()=>deleteBook(book.id)}>
+                                <img src="./img/delete.svg" alt="books icon" className="img-ed"/>
+                                 Delete
+                            </button>
                           
                       </div>
                     </div>

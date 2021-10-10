@@ -19,13 +19,16 @@ const StatBooks = () =>{
         <div className="sidebar-widget widget-library-log">
             <h2 className="sec-title">Library log</h2>
             <div className="library-log">
-                <div className="library-log--single">      
+                <div className="library-log--single"> 
+                    <img src="./img/book-mark.svg" alt="books icon"/>     
                     <h4>Total books : <span id="library-log--total">{total}</span></h4>
                 </div>
-                <div className="library-log--single">  
+                <div className="library-log--single"> 
+                    <img src="./img/check.svg" alt="books icon"/>  
                     <h4>Books read : <span id="library-log--read">{bookRead}</span></h4>
                 </div>
-                <div className="library-log--single">   
+                <div className="library-log--single">  
+                    <img src="./img/x.svg" alt="books icon"/>   
                     <h4>Books not read : <span id="library-log--notread">{total - bookRead }</span></h4>
                 </div>
             </div>
